@@ -51,7 +51,7 @@ function perimetroTriangulo(lado1, lado2, base, unidad){
   return Number(lado1) + Number(lado2) + Number(base) + unidad;
 }
 function areaTriangulo(base, altura, unidad){
-  return ((base * altura) / 2) + unidad;
+  return ((base * altura) / 2) + unidad + '^2';
 }
 function perimetroCircunferencia(radio){
   return (radio * 2) * Math.PI;
