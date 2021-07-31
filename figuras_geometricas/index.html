@@ -74,6 +74,32 @@
         </div>
       </section>
       <section class="figure-box">
+        <h2 class="figure-box__title">Triángulo Isósceles</h2>
+        <div class="figure-box__content">
+          <form class="figure-box__calculus">
+            <label for="input-isosceles1" class="calculus__description">Define la longitud del Lado Uno</label>
+            <input type="number" class="calculus__input" placeholder="Lado uno" id="input-isosceles1"/>
+            <label for="input-isosceles2" class="calculus__description">Define la longitud del Lado Dos</label>
+            <input type="number" class="calculus__input" placeholder="Lado dos" id="input-isosceles2"/>
+            <label for="input-isosceles3" class="calculus__description">Define la longitud del Lado Tres (Base)</label>
+            <input type="number" class="calculus__input" placeholder="Base" id="input-isosceles3"/>
+            <p class="calculus__description calculus__description--calculate">Calcular</p>
+            <div class="buttons">
+              <button class="buttons__item buttons__item--isosceles" type="button" name="button">Altura</button>
+            </div>
+          </form>
+          <div class="figure-box__results">
+            <h4 class="results__title">Resultado</h4>
+            <div class="results__names results__names--isosceles">
+              <p>Altura</p>
+            </div>
+          </div>
+        </div>
+        <div class="results__calc results__calc--isosceles">
+          <h4 id="isosceles-altura" class="results__box results__box--isosceles"></h4>
+        </div>
+      </section>
+      <section class="figure-box">
         <h2 class="figure-box__title">Circunferencia</h2>
         <div class="figure-box__content">
           <form class="figure-box__calculus">

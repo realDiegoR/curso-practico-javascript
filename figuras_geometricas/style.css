@@ -101,6 +101,9 @@ body{
   margin: 0 5px;
   padding: 5px;
 }
+.buttons__item--isosceles{
+  margin: 0 75px;
+}
 .results__title{
   font-size: 2.5rem;
   margin-top: 10px;
@@ -114,10 +117,23 @@ body{
   justify-content: space-between;
   width: 65%;
 }
+.results__names--isosceles{
+  width: 100%;
+  justify-content: center;
+}
 .results__calc{
   display: flex;
   background: rgb(0,0,0,0.5);
   border-radius: 0 0 15px 15px;
+}
+.results__calc--isosceles{
+  border-radius: 3px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  font-size: 1rem;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
 }
 .results__box{
   border-top: 1px solid white;
@@ -127,6 +143,9 @@ body{
   height: 40px;
   text-align: center;
   line-height: 40px;
+}
+.results__box--isosceles{
+  font-size: 1.8rem;
 }
 .second-results__box{
   border-left: 2px solid white;
@@ -144,9 +163,29 @@ body{
     border-radius: 5px;
   }
   .figure-box__title{
-    border-radius: 5px
+    border-radius: 5px;
+    font-size: 2.7rem;
+  }
+  .calculus__description{
+    font-size: 1.67rem;
+  }
+  .calculus__input{
+    font-size: 1.8rem;
+    padding: 4px;
+  }
+  .results__title{
+    font-size: 2.2rem;
+  }
+  .results__names{
+    font-size: 1.6rem;
   }
   .results__calc{
     border-radius: 5px;
+  }
+  .results__box{
+    font-size: 2rem;
+  }
+  .results__box--isosceles{
+    font-size: 1.5rem;
   }
 }
