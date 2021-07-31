@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Figuras geométricas</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Figuras Geométricas</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item"> <a class="header__link" href="/index.html">Home</a> </li>
+          <li class="header__item"> <a class="header__link" href='/about.html'>About</a> </li>
+        </ul>
+      </nav>
+    </header>
+      <section class="figure-box">
+        <h2 class="figure-box__title">Cuadrado</h2>
+        <div class="figure-box__content">
+          <form class="figure-box__calculus">
+            <label for="input-cuadrado" class="calculus__description">Define la longitud de los lados!</label>
+            <input type="number" class="calculus__input" placeholder="Lado" id="input-cuadrado"/>
+            <p class="calculus__description calculus__description--calculate">Calcular</p>
+            <div class="buttons">
+              <button class="buttons__item" type="button" name="button">Perímetro</button>
+              <button class="buttons__item" type="button" name="button">Área</button>
+            </div>
+          </form>
+          <div class="figure-box__results">
+            <h4 class="results__title">Resultado</h4>
+            <div class="results__names">
+              <p>Perímetro</p>
+              <p>Área</p>
+            </div>
+          </div>
+        </div>
+        <div class="results__calc">
+          <h4 id="cuadrado-perimetro" class="results__box"></h4>
+          <h4 id="cuadrado-area" class="results__box second-results__box"></h4>
+        </div>
+      </section>
+      <section class="figure-box">
+        <h2 class="figure-box__title">Triángulo</h2>
+        <div class="figure-box__content">
+          <form class="figure-box__calculus">
+            <label for="input-triangulo1" class="calculus__description">Define la longitud del Lado Uno</label>
+            <input type="number" class="calculus__input" placeholder="Lado uno" id="input-triangulo1"/>
+            <label for="input-triangulo2" class="calculus__description">Define la longitud del Lado Dos</label>
+            <input type="number" class="calculus__input" placeholder="Lado dos" id="input-triangulo2"/>
+            <label for="input-triangulo3" class="calculus__description">Define la longitud del Lado Tres (Base)</label>
+            <input type="number" class="calculus__input" placeholder="Base" id="input-triangulo3"/>
+            <label for="input-triangulo4" class="calculus__description">Define la longitud de la Altura</label>
+            <input type="number" class="calculus__input" placeholder="Altura" id="input-triangulo4"/>
+            <p class="calculus__description calculus__description--calculate">Calcular</p>
+            <div class="buttons">
+              <button class="buttons__item" type="button" name="button">Perímetro</button>
+              <button class="buttons__item" type="button" name="button">Área</button>
+            </div>
+          </form>
+          <div class="figure-box__results">
+            <h4 class="results__title">Resultado</h4>
+            <div class="results__names">
+              <p>Perímetro</p>
+              <p>Área</p>
+            </div>
+          </div>
+        </div>
+        <div class="results__calc">
+          <h4 id="triangulo-perimetro" class="results__box"></h4>
+          <h4 id="triangulo-area" class="results__box second-results__box"></h4>
+        </div>
+      </section>
+      <section class="figure-box">
+        <h2 class="figure-box__title">Circunferencia</h2>
+        <div class="figure-box__content">
+          <form class="figure-box__calculus">
+            <label for="input-triangulo1" class="calculus__description">Define el Radio</label>
+            <input type="number" class="calculus__input" placeholder="Radio" id="input-circunferencia"/>
+            <p class="calculus__description calculus__description--calculate">Calcular</p>
+            <div class="buttons">
+              <button class="buttons__item" type="button" name="button">Perímetro</button>
+              <button class="buttons__item" type="button" name="button">Área</button>
+            </div>
+          </form>
+          <div class="figure-box__results">
+            <h4 class="results__title">Resultado</h4>
+            <div class="results__names">
+              <p>Perímetro</p>
+              <p>Área</p>
+            </div>
+          </div>
+        </div>
+        <div class="results__calc">
+          <h4 id="circunferencia-perimetro" class="results__box"></h4>
+          <h4 id="circunferencia-area" class="results__box second-results__box"></h4>
+        </div>
+      </section>
+
+    <script src="figuras.js" charset="utf-8"></script>
+  </body>
+</html>
