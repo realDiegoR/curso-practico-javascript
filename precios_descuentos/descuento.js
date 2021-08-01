@@ -51,8 +51,8 @@ document.getElementById("calculate").addEventListener("click", ()=>{
   }
   if (productoPrecio && descuentoPrecio >= 0) {
     document.getElementById("output-total-discount").innerHTML = `Descuento total: ${descuentoPrecio}%`;
-    document.getElementById("output-discounted").innerHTML = `Precio descontado: ${precioD.toFixed(3)}$`;
-    document.getElementById("output-final-price").innerHTML = `Precio final: ${precioF.toFixed(3)}$`
+    document.getElementById("output-discounted").innerHTML = `Precio descontado: ${precioD.toFixed(2)}$`;
+    document.getElementById("output-final-price").innerHTML = `Precio final: ${precioF.toFixed(2)}$`
   }else{
     alert('¡Entradas inválidas!')
   }
