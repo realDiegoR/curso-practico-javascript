@@ -49,9 +49,13 @@ document.getElementById("calculate").addEventListener("click", ()=>{
     precioF = (productoPrecio * (100 - descuentoPrecio)) / 100;
     precioD = productoPrecio - precioF
   }
-  document.getElementById("output-total-discount").innerHTML = `Descuento total: ${descuentoPrecio}%`;
-  document.getElementById("output-discounted").innerHTML = `Precio descontado: ${precioD}$`;
-  document.getElementById("output-final-price").innerHTML = `Precio final: ${precioF}$`
+  if (productoPrecio && descuentoPrecio >= 0) {
+    document.getElementById("output-total-discount").innerHTML = `Descuento total: ${descuentoPrecio}%`;
+    document.getElementById("output-discounted").innerHTML = `Precio descontado: ${precioD.toFixed(3)}$`;
+    document.getElementById("output-final-price").innerHTML = `Precio final: ${precioF.toFixed(3)}$`
+  }else{
+    alert('¡Entradas inválidas!')
+  }
 })
 
 //limitar los inputs
