@@ -186,6 +186,7 @@ body{
     padding: 5px;
   }
   .output__results{
+    font-size: 1.4rem;
     margin: 20px 0;
   }
   .footer{
@@ -196,8 +197,39 @@ body{
     text-shadow: none;
     box-shadow: none;
   }
-  }
   .coupons__list-item:active, .coupons__button:active, .output__button:active{
     box-shadow: 1px 1px 4px black;
   }
+}
+@media (max-width: 375px){
+  .output__results{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 320px){
+  .header{
+    font-size: 1.6rem;
+  }
+  .discount{
+    min-width: 310px;
+  }
+  .coupons{
+    min-width: 320px;
+  }
+  .coupons__title{
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+  }
+  .output__title{
+    font-size: 2.7rem;
+  }
+  .output__discounted{
+    margin-bottom: 15px;
+  }
+  .output__results{
+    font-size: 1.1rem;
+    margin: 15px 0;
+    text-align: center;
+  }
+  :
 }
