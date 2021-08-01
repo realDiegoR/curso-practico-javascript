@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Precios & Descuentos</title>
+    <title>Precios y Descuentos</title>
   </head>
   <body>
-    
+    <header class="header">
+      <h1 class="header__title">Calculadora de Descuentos</h1>
+    </header>
+    <p class="explanation">Ingrese los valores del precio, su descuento y opcionalmente un cupón disponible</p>
+    <section class="content">
+      <section class="inputs">
+        <section class="product">
+          <h2 class="product__title">Producto ($)</h2>
+          <input class="product__price" type="number" value="100" min="0" id="product"/>
+        </section>
+        <section class="discount">
+          <h2 class="discount__title">Descuento (%)</h2>
+          <input class="product__price" type="number" value="0" min="0" max="100" id="discount">
+        </section>
+        <section class="coupons">
+          <h2 class="coupons__title">¿Desea ingresar un cupón?</h2>
+          <div class="coupons__existing">
+            <p>Disponibles:</p>
+            <ul class="coupons__list" id="cupones">
+            </ul>
+          </div>
+            <button class="coupons__button"type="button" id="quit-button">Quitar cupón</button>
+          <h5 class="coupons__chosen" id="coupon-true">Elegido: Ninguno</h5>
+        </section>
+      </section>
+      <section class="output">
+        <h1 class="output__title">¡Resultados! </h1>
+        <div class="output__results">
+          <h2 class="output__discounted" id="output-total-discount">Descuento total: </h2>
+          <h2 class="output__discounted" id="output-discounted">Precio descontado:</h2>
+          <h2 class="output__final" id="output-final-price">Precio final:</h2>
+        </div>
+        <button class="output__button" type="button" id="calculate">Calcular</button>
+      </section>
+    </section>
+    <footer class="footer">
+      <a class="footer__item footer__item--anchor" href="../index.html">Home</a>
+      <p class="footer__item">Hecho con &#10084;</p>
+      <a class="footer__item footer__item--anchor" href="../about.html">About</a>
+    </footer>
+    <script src="descuento.js" charset="utf-8"></script>
   </body>
 </html>
