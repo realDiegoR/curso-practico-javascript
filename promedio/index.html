@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Promedio, mediana y moda</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Calculadora de promedios</h1>
+    </header>
+    <section class="mainzone">
+      <section class="inputzone">
+        <h3 class="inputzone__title">Lista de Números</h3>
+        <p class="inputzone__text"><strong>Instrucciones:</strong> Ingrese una lista de números separados por comas ( , ). No hay límites en la cantidad de números</p>
+        <p class="inputzone__text"><strong>Promedios a calcular:</strong></p>
+        <ul class="inputzone__list">
+          <li class="inputzone__item">Media Aritmética</li>
+          <li class="inputzone__item">Media Geométrica</li>
+          <li class="inputzone__item">Media Ponderada</li>
+          <li class="inputzone__item">Mediana</li>
+          <li class="inputzone__item">Moda</li>
+        </ul>
+        <textarea class="inputzone__input" rows="1" cols="50" id="input"></textarea>
+        <div class="">
+          <button class="inputzone__button" type="button" id="boton">Calcular Promedios</button>
+          <button class="inputzone__button" type="button" id="ponderado">Calcular Ponderado</button>
+        </div>
+      </section>
+      <section class="outputzone">
+        <h2 class="outputzone__title">¡Resultados!</h2>
+        <table class="outputzone__table">
+          <tr>
+            <th>Media Aritmética</th>
+            <td id="mediaArit">//</td>
+          </tr>
+          <tr>
+            <th>Media Geométrica</th>
+            <td id="mediaGeom">//</td>
+          </tr>
+          <tr>
+            <th>Media Ponderada</th>
+            <td id="mediaPond">//</td>
+          </tr>
+          <tr>
+            <th>Mediana</th>
+            <td id="mediana">//</td>
+          </tr>
+          <tr>
+            <th>Moda</th>
+            <td id="moda">//</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <footer class="footer">
+      <a class="footer__item footer__item--anchor" href="../index.html">Home</a>
+      <p class="footer__item">Hecho con &#10084;</p>
+      <a class="footer__item footer__item--anchor" href="../about.html">About</a>
+    </footer>
+    <script src="promedio.js" charset="utf-8"></script>
+  </body>
+</html>
