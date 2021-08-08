@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Análisis salarial</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Análisis Salarial</h1>
+      <p class="header__description">Este programa calculará algunos datos sobre tu salario mensual</p>
+    </header>
+    <section class="main">
+      <section class="country">
+        <h2 class="country__title">Seleccione su país</h2>
+        <div class="country__select">
+          <img class="country__flag" src="./img/venezuela.jpg" width='50'/>
+          <img class="country__flag" src="./img/colombia.png" width="50">
+          <img class="country__flag" src="./img/mexico.jpg" width='57.5'/>
+        </div>
+      </section>
+      <section class="ingress">
+        <h2 class="ingress__title">Ingreso mensual</h2>
+        <input class="ingress__input" type="number" min="0" placeholder="$USA" id="input"/>
+        <input class="ingress__button" type="button" value="Analizar" id="button"/>
+      </section>
+      <section class="result">
+        <p class="result__output" id="relacion-promedio"></p>
+        <p class="result__output" id="relacion-costovida"></p>
+        <p class="result__output" id="capacidad-endeudamiento"></p>
+        <p class="result__output" id="impuestos"></p>
+      </section>
+    </section>
+    <footer class="footer">
+      <p class="footer__explanatory">(Las datos por países no son verídicos. El proyecto no tiene fines informativos, únicamente aprendizaje de programación.)</p>
+      <div class="footer__links">
+        <a class="footer__buttons" href="../">Home</a>
+        <a class="footer__buttons" href="../about.html">About</a>
+      </div>
+    </footer>
+
+    <script src="personas.js" charset="utf-8"></script>
+    <script src="analisis.js" charset="utf-8"></script>
+  </body>
+</html>

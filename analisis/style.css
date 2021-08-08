@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  min-height: 100%;
+}
+body{
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+  /* background: linear-gradient(to bottom, #27ae60, limegreen); */
+  background: linear-gradient(to right, #00b89b, #96c93d)
+}
+.header{
+  text-align: center;
+  /* border: 1px solid red; */
+  padding: 15px;
+  color: white;
+}
+.header__title{
+  letter-spacing: 1px;
+}
+.header__description{
+  margin-top: 5px;
+}
+.main{
+  align-items: center;
+  background: rgba(0,0,0,0.2);
+  border: 5px white;
+  border-style: outset;
+  color: #EEE;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  min-width: 368px;
+  padding: 10px;
+  width: 50%;
+}
+.country, .ingress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.country__select{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  width: 100%;
+}
+.country__flag{
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ingress__input{
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  height: 40px;
+  margin: 10px;
+  outline: none;
+  padding: 10px;
+}
+.ingress__button{
+  background: deepskyblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: 'Merriweather', serif;
+  font-size: 1.7rem;
+  outline: none;
+  padding: 5px;
+  width: 100px;
+  transition: 200ms background;
+}
+.result{
+  margin: 15px;
+}
+.result__output{
+  font-variant: small-caps;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px;
+}
+.footer{
+  background: #dff;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+}
+.footer__explanatory{
+  font-size: 1.3rem;
+  text-align: center;
+  color: #666
+}
+.footer__buttons{
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.9rem;
+}
+.footer__buttons:hover{
+  text-decoration: underline;
+  color: #222;
+}
+
+@media (max-width: 768px){
+  .footer__explanatory{
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 425px){
+  .header__title{
+    font-size: 2.7rem;
+    margin-top: 15px;
+  }
+  .header__description{
+    font-size: 1.5rem;
+  }
+  .main{
+    min-width: 80%
+  }
+  .country__title, .ingress__title{
+    font-size: 2.2rem;
+  }
+  .ingress{
+    margin-top: 20px;
+  }
+  .result{
+    margin: 0;
+  }
+  .result__output{
+    margin: 20px 0;
+  }
+  .footer{
+    padding: 10px;
+  }
+  .footer__explanatory{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 375px){
+  .header__description{
+    font-size: 1.4rem
+  }
+  .country__flag{
+
+  }
+  .main{
+    min-width: 95%;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  .result__output{
+    font-size: 1.5rem;
+  }
+  .footer{
+    margin-top: 71px;
+    position: static;
+  }
+  .footer__explanatory{
+    font-size: 1rem;
+  }
+  .footer__buttons{
+    font-size: 1.7rem;
+  }
+}
