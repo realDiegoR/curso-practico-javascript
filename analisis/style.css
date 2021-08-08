@@ -68,12 +68,12 @@ body{
   background: deepskyblue;
   border: 2px solid black;
   border-radius: 5px;
+  cursor: pointer;
   font-family: 'Merriweather', serif;
   font-size: 1.7rem;
   outline: none;
   padding: 5px;
   width: 100px;
-  transition: 200ms background;
 }
 .result{
   margin: 15px;
