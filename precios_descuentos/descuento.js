@@ -1,6 +1,11 @@
 //define los cupones
-let cupones = [{nombre:'Verano 2021', valor: 20, elegido: false}, {nombre:'Regreso a Clases', valor: 5, elegido: false}, {nombre:'Patriótico', valor: 10, elegido: false}]
+let cupones = [
+  {nombre:'Verano 2021', valor: 20, elegido: false},
+  {nombre:'Patriótico', valor: 10, elegido: false},
+  {nombre:'Regreso a Clases', valor: 5, elegido: false}
+]
 let mostradorCupones = document.getElementById('cupones') //donde se clickean los cupones
+
 //imprime los cupones para ser clickeados
 cupones.forEach((item) => {
   mostradorCupones.innerHTML += `<li class="coupons__list-item">${item.nombre} [ ${item.valor}% ]</li>`

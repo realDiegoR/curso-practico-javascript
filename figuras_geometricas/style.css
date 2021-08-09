@@ -160,10 +160,10 @@ body{
   .figure-box{
     width: 95%;
     min-width: 310px;
-    border-radius: 5px;
+    border-radius: 10px 10px 5px 5px;
   }
   .figure-box__title{
-    border-radius: 5px;
+    border-radius: 10px 10px 0 0;
     font-size: 2.7rem;
   }
   .calculus__description{

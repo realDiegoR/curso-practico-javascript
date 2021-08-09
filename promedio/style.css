@@ -84,7 +84,7 @@ body{
   background: dimgray;
 }
 .inputzone__button{
-  background: yellow;
+  background: #ffea00;
   border: 1px solid black;
   border-radius: 10px;
   cursor: pointer;
@@ -160,7 +160,7 @@ body{
   }
   .footer{
     position: static;
-    margin: 20px 0 10px;
+    margin: 20px 0 15px;
   }
 }
 @media (max-width: 425px){
