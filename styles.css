@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #905583;
+    background-attachment: fixed;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 104px;
+    background: #6a3e73;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 0 14px white;
+}
+header h1{
+    font-size: 3.6rem;
+}
+header h1 span{
+    color: #be9e9e;
+}
+header p{
+    font-size: 2rem;
+    margin-top: 8px;
+}
+main{
+    text-align: center;
+    padding-top: 24px;
+}
+.presentation{
+    font-size: 2.2rem;
+}
+.description{
+    font-size: 1.6rem;
+    margin-top: 6px;
+}
+main section{
+    position: relative;
+    width: 60%;
+    min-width: 290px;
+    height: 95px;
+    box-shadow: 0 2px 12px black;
+    border-radius: 8px;
+    margin: 15px auto 0;
+    transition: 400ms all;
+}
+main section:hover{
+    transform: scale(1.05)
+}
+.projects--figuras{
+    background: url("./img/figures.png");
+    background-size: cover;
+}
+.projects--descuentos{
+    background: url("./img/desc.png");
+    background-size: cover;
+}
+.projects--promedio{
+    background: url("./img/promedio.png");
+    background-size: cover;
+}
+.projects--analisis{
+    background: url("./img/salario.png");
+    background-size: cover;
+}
+.section-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    color: purple;
+    background: white;
+    border-radius: 8px 0 0 0;
+    padding: 5px 10px;
+    /* font-weight: bold; */
+}
+
+@media (max-width: 768px) {
+    header{
+        height: 95px;
+    }
+    header h1{
+        font-size: 2.8rem;
+    }
+    header p{
+        font-size: 1.4rem;
+    }
+    main{
+        padding: 20px 5px;
+    }
+    .presentation{
+        font-size: 1.6rem;
+    }
+    .description{
+        font-size: 1.3rem;
+        margin-top: 6px;
+    }
+    .section-name{
+        font-size: 1.4rem;
+    }
+}
